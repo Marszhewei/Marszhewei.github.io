@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="mars orzz">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="git"/>
+  <meta property="og:description" content="A blog recording learning" />
+  <meta property="og:site_name" content="Hi mars"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://example.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Hi mars" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Hi mars</title>
+
+  <!-- Bootstrap CSS -->
+  
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  
+  
+<link rel="stylesheet" href="/css/style.dark.css">
+
+
+  <!-- Google Analytics -->
+  
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/images/git.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">git</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a target="_blank" rel="noopener" href="https://github.com/Marszhewei/">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:zhewei@stu.xidian.edu.cn">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By mars orzz</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2022-01-16</span>
+            <span class="time">00:05:30</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h1 id="git基本使用"><a href="#git基本使用" class="headerlink" title="git基本使用"></a>git基本使用</h1><h2 id="一、本地仓库操作"><a href="#一、本地仓库操作" class="headerlink" title="一、本地仓库操作"></a>一、本地仓库操作</h2><h3 id="1-1、初始化仓库、查看状态"><a href="#1-1、初始化仓库、查看状态" class="headerlink" title="1.1、初始化仓库、查看状态"></a>1.1、初始化仓库、查看状态</h3><ul>
+<li>git init</li>
+<li>git status</li>
+</ul>
+<h3 id="1-2、添加（将代码由工作区添加到缓存区）"><a href="#1-2、添加（将代码由工作区添加到缓存区）" class="headerlink" title="1.2、添加（将代码由工作区添加到缓存区）"></a>1.2、添加（将代码由工作区添加到缓存区）</h3><ul>
+<li><p>git add file_name             </p>
+</li>
+<li><p>git add  .    （保存所有未保存的文件）</p>
+</li>
+</ul>
+<h3 id="1-3、提交（每次commit都会有快照）"><a href="#1-3、提交（每次commit都会有快照）" class="headerlink" title="1.3、提交（每次commit都会有快照）"></a>1.3、提交（每次commit都会有快照）</h3><ul>
+<li><p>git commit -a -m “注释”    将代码由暂存区提交到本地仓库</p>
+</li>
+<li><p>基本是修改一些代码，add一下，commit一下</p>
+</li>
+<li><p>git rm –cached            （移除这个缓存）</p>
+</li>
+</ul>
+<h3 id="1-4、日志（保存之前的所有commit，方便回滚）"><a href="#1-4、日志（保存之前的所有commit，方便回滚）" class="headerlink" title="1.4、日志（保存之前的所有commit，方便回滚）"></a>1.4、日志（保存之前的所有commit，方便回滚）</h3><ul>
+<li><p>git log            （查看commit日志）</p>
+</li>
+<li><p>git reset –hard (id)         （回滚）</p>
+</li>
+<li><p>git reflog                            （查看切换）</p>
+</li>
+</ul>
+<h3 id="1-5、添加文件至文件忽略列表"><a href="#1-5、添加文件至文件忽略列表" class="headerlink" title="1.5、添加文件至文件忽略列表"></a>1.5、添加文件至文件忽略列表</h3><ul>
+<li>touch .gitignore（把不需要保存的文件名写在里面）</li>
+</ul>
+<h3 id="1-6、查看分支"><a href="#1-6、查看分支" class="headerlink" title="1.6、查看分支"></a>1.6、查看分支</h3><ul>
+<li>git branch            （查看本地分支）</li>
+<li>git branch -r            （查看远程分支）</li>
+<li>git branch -vv         （对应关系）</li>
+<li>git remote -v            （查看远程仓库）</li>
+</ul>
+<h3 id="1-7、创建分支"><a href="#1-7、创建分支" class="headerlink" title="1.7、创建分支"></a>1.7、创建分支</h3><ul>
+<li>git branch branch_name</li>
+<li>git checkout -b branch_name          创建并切换到该分支</li>
+</ul>
+<h3 id="1-8、删除分支"><a href="#1-8、删除分支" class="headerlink" title="1.8、删除分支"></a>1.8、删除分支</h3><ul>
+<li><p>git branch -d branch_name （删除过程中做检查）</p>
+</li>
+<li><p>git branch -D branch_name （强制删除，不做检查）</p>
+<p>  在该分支代码未合并到master分支时，直接删除会不成功</p>
+</li>
+</ul>
+<h3 id="1-9、切换"><a href="#1-9、切换" class="headerlink" title="1.9、切换"></a>1.9、切换</h3><ul>
+<li>git checkout branch_name            切换分支</li>
+<li>git checkout v1.0                            切换tag</li>
+<li>git checkout id                                切换到某次commit</li>
+<li>git checkout a.md                        撤销（撤销还没有进暂存区的文件）</li>
+</ul>
+<h3 id="1-10、merge-amp-rebase（合并）"><a href="#1-10、merge-amp-rebase（合并）" class="headerlink" title="1.10、merge&amp;rebase（合并）"></a>1.10、merge&amp;rebase（合并）</h3><h4 id="1-、merge"><a href="#1-、merge" class="headerlink" title="(1)、merge"></a>(1)、merge</h4><ul>
+<li>git checkout master</li>
+<li>git merge other_branch_name </li>
+</ul>
+<h4 id="2-、rebase"><a href="#2-、rebase" class="headerlink" title="(2)、rebase"></a>(2)、rebase</h4><ul>
+<li><p>git checkout master</p>
+</li>
+<li><p>git rebase other_branch_name</p>
+</li>
+</ul>
+<h4 id="3-、区别"><a href="#3-、区别" class="headerlink" title="(3)、区别"></a>(3)、区别</h4><p>​        merge比较暴力，直接腾出区域把另一个分支全放进去，好处是可以知道哪些代码是来自哪一个分支的</p>
+<p>​        rebase会按照一定顺序进行重新排序，然后再放入，但是不知道哪些代码来自哪个分支</p>
+<p>​        修改文件出现冲突时需要操作者手动修改再进行合并</p>
+<h3 id="1-11、标签（tag）"><a href="#1-11、标签（tag）" class="headerlink" title="1.11、标签（tag）"></a>1.11、标签（tag）</h3><ul>
+<li>git tag        （查看版本：历史tag记录）</li>
+<li>git tag v0.1        （在当前代码状态下创建了一个tag）</li>
+<li>git checkout v0.1        （切换到目标tag）</li>
+</ul>
+<h3 id="1-12、diff（查看改动）"><a href="#1-12、diff（查看改动）" class="headerlink" title="1.12、diff（查看改动）"></a>1.12、diff（查看改动）</h3><ul>
+<li>git diff &lt;$id1&gt; &lt;$id2&gt;           比较两次提交之间的差异</li>
+<li>git diff <branch1>..<branch2>           比较两个分支</li>
+<li>git diff –staged        比较暂存区和版本库的差异</li>
+</ul>
+<h3 id="1-13、暂存"><a href="#1-13、暂存" class="headerlink" title="1.13、暂存"></a>1.13、暂存</h3><ul>
+<li><p>git stash            （用于修改bug时暂存未完成的代码）</p>
+</li>
+<li><p>上面的命令把所有没有commit的代码暂存起来</p>
+</li>
+<li><p>git stash list             查看暂存区的记录</p>
+</li>
+<li><p>git stash apply            还原代码到工作区</p>
+</li>
+<li><p>git stash drop                最好在还原之后把stash记录删除</p>
+</li>
+<li><p>git stash pop                相当于apply 和 drop的结合</p>
+</li>
+<li><p>git stash clear                清空（上面的是删除一条）</p>
+</li>
+<li><p>drop后可跟stash_id，不加参数就是删除最近一条</p>
+</li>
+</ul>
+<h3 id="1-14、快进模式（Fast-forward）"><a href="#1-14、快进模式（Fast-forward）" class="headerlink" title="1.14、快进模式（Fast-forward）"></a>1.14、快进模式（Fast-forward）</h3><p>​        当修改了dev代码而未修改master代码时仍然要把dev分支合并到master分支，自动采用快进模式</p>
+<h3 id="1-15、解决合并冲突"><a href="#1-15、解决合并冲突" class="headerlink" title="1.15、解决合并冲突"></a>1.15、解决合并冲突</h3><p>​        在进行pull或fetch+merge时出现本地与远程仓库分支冲突，在本地进行修改后再push</p>
+<h2 id="二、远程仓库"><a href="#二、远程仓库" class="headerlink" title="二、远程仓库"></a>二、远程仓库</h2><h3 id="2-1、生成SSH公钥"><a href="#2-1、生成SSH公钥" class="headerlink" title="2.1、生成SSH公钥"></a>2.1、生成SSH公钥</h3><ul>
+<li>ssh-keygen -t rsa      （指定rsa算法生成密钥）</li>
+</ul>
+<h3 id="2-2、获取公钥"><a href="#2-2、获取公钥" class="headerlink" title="2.2、获取公钥"></a>2.2、获取公钥</h3><ul>
+<li>cat ~/.ssh/id_rsa.pub</li>
+</ul>
+<h3 id="2-3、验证是否配置成功"><a href="#2-3、验证是否配置成功" class="headerlink" title="2.3、验证是否配置成功"></a>2.3、验证是否配置成功</h3><ul>
+<li>ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#101;&#101;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#101;&#101;&#x2e;&#99;&#x6f;&#109;</a></li>
+<li>ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;</a></li>
+</ul>
+<h3 id="2-4、给远程仓库起名"><a href="#2-4、给远程仓库起名" class="headerlink" title="2.4、给远程仓库起名"></a>2.4、给远程仓库起名</h3><ul>
+<li><p>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#101;&#x65;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#101;&#x65;&#46;&#99;&#111;&#109;</a>:mars-zhewei/super-mario.git</p>
+</li>
+<li><p>git remote   （查看远程仓库是否添加成功）</p>
+</li>
+<li><p>git remote rm name      （删除远程仓库名）</p>
+</li>
+</ul>
+<h3 id="2-5、推送代码"><a href="#2-5、推送代码" class="headerlink" title="2.5、推送代码"></a>2.5、推送代码</h3><p>​                如果你是通过clone命令获取的本地仓库</p>
+<ul>
+<li><p>git push origin master   （直接通过这种方式提交master分支的代码）</p>
+</li>
+<li><p>tip: github中是main, gitee中是master</p>
+</li>
+<li><p>git push [-f] [–set-upstream] [远程仓库主机名] [本地分支名]:[远端分支名]</p>
+</li>
+<li><p>exp:    git push origin master:master</p>
+<p>  其中    -f 参数为强制覆盖（当本地与云端出现冲突时）<strong>一般不允许</strong></p>
+<p>  其中    –set-upstream 为推送到远端的同时建立和远端分支的关联关系</p>
+</li>
+</ul>
+<h3 id="2-6、克隆代码"><a href="#2-6、克隆代码" class="headerlink" title="2.6、克隆代码"></a>2.6、克隆代码</h3><ul>
+<li>git clone <a target="_blank" rel="noopener" href="https://github.com/Marszhewei/SuperMario.git">https://github.com/Marszhewei/SuperMario.git</a></li>
+</ul>
+<h3 id="2-7、从远端仓库抓取和拉取"><a href="#2-7、从远端仓库抓取和拉取" class="headerlink" title="2.7、从远端仓库抓取和拉取"></a>2.7、从远端仓库抓取和拉取</h3><ul>
+<li><p>​    git fetch [remote_name] [branch_name]       </p>
+<p>  （将远程仓库分支抓取到本地且不会进行合并）</p>
+</li>
+<li><p>​    git pull [remote_name] [branch_name]          </p>
+<p>  （将远程仓库分支拉取到本地并自动进行合并；如果不指定远端名和分支名，则抓取所有并更新当前分支）</p>
+</li>
+</ul>
+<h3 id="2-8、迁移本地"><a href="#2-8、迁移本地" class="headerlink" title="2.8、迁移本地"></a>2.8、迁移本地</h3><ul>
+<li><p>git checkout develop origin/develop                        </p>
+<p>  （本地没有develop，迁移远程的develop）</p>
+</li>
+<li><p>git checkout -b develop origin/develop</p>
+<p>  （迁移的同时切换到该分支）</p>
+</li>
+</ul>
+<h1 id="git生产中应用"><a href="#git生产中应用" class="headerlink" title="git生产中应用"></a>git生产中应用</h1><h2 id="一、master分支"><a href="#一、master分支" class="headerlink" title="一、master分支"></a>一、master分支</h2><p>​        线上分支，主分支，中小规模项目作为线上运行的应用对应的分支。</p>
+<h2 id="二、develop分支"><a href="#二、develop分支" class="headerlink" title="二、develop分支"></a>二、develop分支</h2><p>​        是从master创建的分支，一般作为开发部门的主要开发分支，如果没有其他并行开发不同期上线要求，都可以在此版本进行开发，阶段开发完成后，需要合并到master主分支上，准备上线。</p>
+<h2 id="三、feature-xxxx分支"><a href="#三、feature-xxxx分支" class="headerlink" title="三、feature/xxxx分支"></a>三、feature/xxxx分支</h2><p>​        从develop创建的分支，是开发新功能的分支，一般是同期并行发布，但不同期上线时创建的分支，分支上的研发任务完成后merge到develop分支。</p>
+<h2 id="四、hotfix-xxxx分支"><a href="#四、hotfix-xxxx分支" class="headerlink" title="四、hotfix/xxxx分支"></a>四、hotfix/xxxx分支</h2><p>​        从master派生的分支，一般作为线上(master)bug修复使用，修复完成后要合并到master，test，develop分支。</p>
+<h2 id="五、release"><a href="#五、release" class="headerlink" title="五、release"></a>五、release</h2><p>​        准备要发布版本的分支，用来修复bug，基于develop，完成后merge回develop和master</p>
+<h2 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h2><p>​        test分支（用于代码测试），pre分支（用于预上线）</p>
+<h1 id="远程仓库使用案例"><a href="#远程仓库使用案例" class="headerlink" title="远程仓库使用案例"></a>远程仓库使用案例</h1><h2 id="一、无本地仓库"><a href="#一、无本地仓库" class="headerlink" title="一、无本地仓库"></a>一、无本地仓库</h2><p>​        前提是SSH已经配置好</p>
+<h3 id="1-1、clone"><a href="#1-1、clone" class="headerlink" title="1.1、clone"></a>1.1、clone</h3><ul>
+<li>git clone <a target="_blank" rel="noopener" href="https://github.com/Marszhewei/SuperMario.git">https://github.com/Marszhewei/SuperMario.git</a></li>
+</ul>
+<h3 id="1-2、push"><a href="#1-2、push" class="headerlink" title="1.2、push"></a>1.2、push</h3><ul>
+<li>git push origin main</li>
+</ul>
+<h2 id="二、有本地仓库"><a href="#二、有本地仓库" class="headerlink" title="二、有本地仓库"></a>二、有本地仓库</h2><h3 id="2-1-set-user"><a href="#2-1-set-user" class="headerlink" title="2.1 set user"></a>2.1 set user</h3><ul>
+<li><p>git config –global user.name “name”</p>
+</li>
+<li><p>git config –global user.email “email”</p>
+<p>  如果你想要某一个项目使用特定的邮箱那么请去掉–global</p>
+</li>
+</ul>
+<h3 id="2-2、add-remote"><a href="#2-2、add-remote" class="headerlink" title="2.2、add remote"></a>2.2、add remote</h3><ul>
+<li>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x65;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x65;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>:mars-zhewei/super-mario.git</li>
+</ul>
+<h3 id="2-3、push"><a href="#2-3、push" class="headerlink" title="2.3、push"></a>2.3、push</h3><ul>
+<li>git push origin master</li>
+</ul>
+<h1 id="其它常用命令"><a href="#其它常用命令" class="headerlink" title="其它常用命令"></a>其它常用命令</h1><h2 id="一、重命名"><a href="#一、重命名" class="headerlink" title="一、重命名"></a>一、重命名</h2><h3 id="1-1、alias"><a href="#1-1、alias" class="headerlink" title="1.1、alias"></a>1.1、alias</h3><ul>
+<li>git config –global alias.lg “log –graph –pretty=format:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset’ –abbrev-commit –date=relative”</li>
+<li>​        直接使用git lg</li>
+</ul>
+<h2 id="二、其他配置"><a href="#二、其他配置" class="headerlink" title="二、其他配置"></a>二、其他配置</h2><h3 id="2-1、vim"><a href="#2-1、vim" class="headerlink" title="2.1、vim"></a>2.1、vim</h3><ul>
+<li>git config –global core.editor “vim”</li>
+</ul>
+<h3 id="2-2、ui"><a href="#2-2、ui" class="headerlink" title="2.2、ui"></a>2.2、ui</h3><ul>
+<li>git config –global corlor.ui true</li>
+</ul>
+<h3 id="2-3、设置显示中文文件名"><a href="#2-3、设置显示中文文件名" class="headerlink" title="2.3、设置显示中文文件名"></a>2.3、设置显示中文文件名</h3><ul>
+<li>git config –global core.quotepath false</li>
+</ul>
+<h3 id="2-4、查看配置文件"><a href="#2-4、查看配置文件" class="headerlink" title="2.4、查看配置文件"></a>2.4、查看配置文件</h3><p>​        上面这些配置都是在~/.gitconfig文件下的</p>
+<ul>
+<li>git config -l            查看</li>
+</ul>
+<h1 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h1><h2 id="一、gitflow工具"><a href="#一、gitflow工具" class="headerlink" title="一、gitflow工具"></a>一、gitflow工具</h2><ul>
+<li><p>git flow feature start A        创建以feature开头的分支</p>
+</li>
+<li><p>git flow feature finish A        合并到develop分支</p>
+<p>  如果是hotfix或者release分支甚至会自动帮你合并到develop、master</p>
+</li>
+</ul>
+<h1 id="github使用"><a href="#github使用" class="headerlink" title="github使用"></a>github使用</h1><h2 id="一、github常用功能"><a href="#一、github常用功能" class="headerlink" title="一、github常用功能"></a>一、github常用功能</h2><h3 id="1-1、Watch-Star-Fork"><a href="#1-1、Watch-Star-Fork" class="headerlink" title="1.1、Watch Star Fork"></a>1.1、Watch Star Fork</h3><p>​        Watch: 观察（关注）</p>
+<p>​        Star: 点赞（对项目的支持）</p>
+<p>​        Fork: 获得别人项目的一份拷贝（在获得仓库管理者的merge后你的项目</p>
+<h3 id="1-2、Code"><a href="#1-2、Code" class="headerlink" title="1.2、Code"></a>1.2、Code</h3><p>​        你项目的代码文件（建议加一个readme，方便别人使用）</p>
+<h3 id="1-3、Issues"><a href="#1-3、Issues" class="headerlink" title="1.3、Issues"></a>1.3、Issues</h3><p>​        该项目的一些问题或者bug</p>
+<p>​        分为解决的问题(close)和待解决(open)</p>
+<h3 id="1-4、Pull-requests"><a href="#1-4、Pull-requests" class="headerlink" title="1.4、Pull requests"></a>1.4、Pull requests</h3><p>​        一般先将别人的项目fork到你自己的仓库（相当于是原项目的分支）</p>
+<p>​        然后你把项目再clone到本地</p>
+<p>​        修改完成后push到远端仓库</p>
+<p>​        通过pull requests提交PR</p>
+<p>​        等待原作者review你的代码，如果接受，你就是项目的贡献者之一了</p>
+<h3 id="1-5、Projects"><a href="#1-5、Projects" class="headerlink" title="1.5、Projects"></a>1.5、Projects</h3><p>​        分类Issues, pull requests等</p>
+<h3 id="1-6、Wiki"><a href="#1-6、Wiki" class="headerlink" title="1.6、Wiki"></a>1.6、Wiki</h3><p>​        说明文档</p>
+<h3 id="1-7、Pulse"><a href="#1-7、Pulse" class="headerlink" title="1.7、Pulse"></a>1.7、Pulse</h3><p>​        汇总概况</p>
+<h3 id="1-8、Graphs"><a href="#1-8、Graphs" class="headerlink" title="1.8、Graphs"></a>1.8、Graphs</h3><p>​        以图的形式展开项目整体情况</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+
+<script src="/js/highlight.pack.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
