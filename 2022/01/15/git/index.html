@@ -42,7 +42,7 @@
     <!-- Page Header -->
 
 
-<header class="site-header header-background" style="background-image: url(/images/git.jpg)">
+<header class="site-header header-background" style="background-image: url(/img/wallhaven-4vqv8p.jpg)">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -103,8 +103,8 @@
           
           <!-- Date -->
           <span class="date-time info">On
-            <span class="date">2022-01-16</span>
-            <span class="time">00:26:02</span>
+            <span class="date">2022-01-15</span>
+            <span class="time">14:46:43</span>
           </span>
           
         </div>
@@ -155,6 +155,7 @@
 <li><p>git branch -d branch_name （删除过程中做检查）</p>
 </li>
 <li><p>git branch -D branch_name （强制删除，不做检查）</p>
+<p>​    </p>
 <p>  在该分支代码未合并到master分支时，直接删除会不成功</p>
 </li>
 </ul>
@@ -214,11 +215,11 @@
 <li>cat ~/.ssh/id_rsa.pub</li>
 </ul>
 <h3 id="2-3、验证是否配置成功"><a href="#2-3、验证是否配置成功" class="headerlink" title="2.3、验证是否配置成功"></a>2.3、验证是否配置成功</h3><ul>
-<li>ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#101;&#101;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#101;&#101;&#x2e;&#99;&#x6f;&#109;</a></li>
-<li>ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;</a></li>
+<li>ssh -T <code>git@gitee.com</code></li>
+<li>ssh -T <code>git@github.com</code></li>
 </ul>
 <h3 id="2-4、给远程仓库起名"><a href="#2-4、给远程仓库起名" class="headerlink" title="2.4、给远程仓库起名"></a>2.4、给远程仓库起名</h3><ul>
-<li><p>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#101;&#x65;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#101;&#x65;&#46;&#99;&#111;&#109;</a>:mars-zhewei/super-mario.git</p>
+<li><p>git remote add origin<code> git@gitee.com</code>:mars-zhewei/super-mario.git</p>
 </li>
 <li><p>git remote   （查看远程仓库是否添加成功）</p>
 </li>
@@ -234,12 +235,13 @@
 <li><p>git push [-f] [–set-upstream] [远程仓库主机名] [本地分支名]:[远端分支名]</p>
 </li>
 <li><p>exp:    git push origin master:master</p>
+<p>​    </p>
 <p>  其中    -f 参数为强制覆盖（当本地与云端出现冲突时）<strong>一般不允许</strong></p>
 <p>  其中    –set-upstream 为推送到远端的同时建立和远端分支的关联关系</p>
 </li>
 </ul>
 <h3 id="2-6、克隆代码"><a href="#2-6、克隆代码" class="headerlink" title="2.6、克隆代码"></a>2.6、克隆代码</h3><ul>
-<li>git clone <a target="_blank" rel="noopener" href="https://github.com/Marszhewei/SuperMario.git">https://github.com/Marszhewei/SuperMario.git</a></li>
+<li>git clone<code> https://github.com/Marszhewei/SuperMario.git</code></li>
 </ul>
 <h3 id="2-7、从远端仓库抓取和拉取"><a href="#2-7、从远端仓库抓取和拉取" class="headerlink" title="2.7、从远端仓库抓取和拉取"></a>2.7、从远端仓库抓取和拉取</h3><ul>
 <li><p>​    git fetch [remote_name] [branch_name]       </p>
@@ -265,7 +267,7 @@
 <h2 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h2><p>​        test分支（用于代码测试），pre分支（用于预上线）</p>
 <h1 id="远程仓库使用案例"><a href="#远程仓库使用案例" class="headerlink" title="远程仓库使用案例"></a>远程仓库使用案例</h1><h2 id="一、无本地仓库"><a href="#一、无本地仓库" class="headerlink" title="一、无本地仓库"></a>一、无本地仓库</h2><p>​        前提是SSH已经配置好</p>
 <h3 id="1-1、clone"><a href="#1-1、clone" class="headerlink" title="1.1、clone"></a>1.1、clone</h3><ul>
-<li>git clone <a target="_blank" rel="noopener" href="https://github.com/Marszhewei/SuperMario.git">https://github.com/Marszhewei/SuperMario.git</a></li>
+<li>git clone<code> https://github.com/Marszhewei/SuperMario.git</code></li>
 </ul>
 <h3 id="1-2、push"><a href="#1-2、push" class="headerlink" title="1.2、push"></a>1.2、push</h3><ul>
 <li>git push origin main</li>
@@ -274,11 +276,12 @@
 <li><p>git config –global user.name “name”</p>
 </li>
 <li><p>git config –global user.email “email”</p>
+<p>​    </p>
 <p>  如果你想要某一个项目使用特定的邮箱那么请去掉–global</p>
 </li>
 </ul>
 <h3 id="2-2、add-remote"><a href="#2-2、add-remote" class="headerlink" title="2.2、add remote"></a>2.2、add remote</h3><ul>
-<li>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x65;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x65;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>:mars-zhewei/super-mario.git</li>
+<li>git remote add origin <code>git@gitee.com</code>:mars-zhewei/super-mario.git</li>
 </ul>
 <h3 id="2-3、push"><a href="#2-3、push" class="headerlink" title="2.3、push"></a>2.3、push</h3><ul>
 <li>git push origin master</li>
@@ -298,7 +301,9 @@
 </ul>
 <h3 id="2-4、查看配置文件"><a href="#2-4、查看配置文件" class="headerlink" title="2.4、查看配置文件"></a>2.4、查看配置文件</h3><p>​        上面这些配置都是在~/.gitconfig文件下的</p>
 <ul>
-<li>git config -l            查看</li>
+<li><p>git config -l            查看</p>
+<p>​    </p>
+</li>
 </ul>
 <h1 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h1><h2 id="一、gitflow工具"><a href="#一、gitflow工具" class="headerlink" title="一、gitflow工具"></a>一、gitflow工具</h2><ul>
 <li><p>git flow feature start A        创建以feature开头的分支</p>
